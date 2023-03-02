@@ -2,10 +2,75 @@ img {
   max-width: 100%;
 }
 
-header {
-  padding: 100px 0;
+
+body {
+  font-family: 'DM Sans',sans-serif;
+
 }
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(0 0 0 / 94%);
+}
+
+.navbar-collapse {
+  margin-top: -20px;
+}
+.show {
+  transition: 0s;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(4px);}
+
+header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background: rgba(173, 190, 166, 0.15);
+  backdrop-filter: blur(4px);
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .container{
+    .header {
+
+      .btn-con {
+        padding: 1em 1.5em;
+        font-weight: 700;
+        font-size: 1em;
+        line-height: 16px;
+        color: #23262F;
+        border: 2px solid #E6E8EC;
+        border-radius: 90px;
+        background: transparent;
+      }
+      &--nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        hr{
+
+          width: 2px;
+          height: 40px;
+          background: #E6E8EC;
+          border-radius: 2px;
+        }
+        a {
+          text-decoration: none;
+
+          color: #23262F;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+      }
+    }
+  }
+
+
 #hero {
+  padding-top: 10rem;
+
   .container {
     .hero {
       &--title {
@@ -13,6 +78,33 @@ header {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+      p {
+        font-family: 'Poppins',sans-serif;
+        font-weight: 700;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        color: #777E91;
+        margin-bottom: 0.5em;
+      }
+        h1 {
+          font-weight: 700;
+          font-size: 2.5em;
+          text-align: center;
+          letter-spacing: -0.01em;
+          color: #23262F;
+
+        }
+        button {
+          padding: 1em 1.5em;
+          font-weight: 700;
+          font-size: 1em;
+          line-height: 16px;
+          color: #23262F;
+          border: 2px solid #E6E8EC;
+          border-radius: 90px;
+          background: transparent;
+          margin-top: 1rem;
+        }
       }
       .col {
         display: flex;
@@ -54,6 +146,7 @@ header {
             font-size: 16px;
             text-align: center;
             color: #23262F;
+            padding-top: 2rem;
           }
           h3 {
             font-weight: 700;
@@ -101,12 +194,13 @@ header {
 
         h1{
           font-weight: 600;
-          font-size: 64px;
+          font-size: 5rem;
           line-height: 64px;
           letter-spacing: -0.02em;
           color: #23262F;
         }
       }
+
 
     }
   }
