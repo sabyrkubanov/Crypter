@@ -14,42 +14,91 @@ header {
         justify-content: center;
         flex-direction: column;
       }
-
-      &--card {
-        .col {
-          &--user{
+      .col {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        &--user{
+          display: flex;
+          &__users {
             display: flex;
-            &__users {
-              display: flex;
-              justify-content: center;
-              align-items: flex-start;
-              p {
-                font-weight: 900;
-                font-size: 14px;
-                color: #23262F;
+            justify-content: center;
+            align-items: flex-start;
+            p {
+              font-weight: 900;
+              font-size: 14px;
+              color: #23262F;
+              line-height: 20px;
+              padding: 0px 10px;
+              span {
+                font-weight: 400;
+                font-size: 12px;
                 line-height: 20px;
-                padding: 0px 10px;
-                span {
-                  font-weight: 400;
-                  font-size: 12px;
-                  line-height: 20px;
-                  color: #777E91;
-                }
-
+                color: #777E91;
               }
-            }
 
-          }
-          &--currency {
-            width: 352px;
-            height: 296px;
-            background: #FCFCFD;
-            border: 2px solid #E6E8EC;
-            box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
-            border-radius: 24px;
+            }
           }
 
         }
+        &--currency {
+          width: 100%;
+          height: 296px;
+          background: #FCFCFD;
+          border: 2px solid #E6E8EC;
+          box-shadow: 0 64px 64px -48px rgba(31, 47, 70, 0.12);
+          border-radius: 24px;
+          h2 {
+            font-weight: 500;
+            font-size: 16px;
+            text-align: center;
+            color: #23262F;
+          }
+          h3 {
+            font-weight: 700;
+            font-size: 48px;
+            text-align: center;
+            letter-spacing: -0.02em;
+            color: #141416;
+          }
+          h4 {
+            font-weight: 600;
+            font-size: 24px;
+            text-align: center;
+            color: #777E91;
+          }
+          h5 {
+            font-weight: 500;
+            font-size: 16px;
+            text-align: center;
+            color: #23262F;
+          }
+          p {
+            font-weight: 700;
+            font-size: 32px;
+            text-align: center;
+            letter-spacing: -0.01em;
+            color: #141416;
+            span {
+              font-weight: 500;
+              font-size: 16px;
+              text-align: center;
+              color: #777E91;
+            }
+          }
+          &__current {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+
+          }
+        }
+
+      }
+      &--card {
+
         h1{
           font-weight: 600;
           font-size: 64px;
@@ -63,7 +112,6 @@ header {
   }
 
 }
-
 
 
 
