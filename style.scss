@@ -1,71 +1,85 @@
-img {
-  max-width: 100%;
-}
+@import "reset";
+@import "mixin";
 
-
-body {
-  font-family: 'DM Sans',sans-serif;
-
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: rgb(0 0 0 / 94%);
-}
-
-.navbar-collapse {
-  margin-top: -20px;
-}
-.show {
-  transition: 0s;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.14);
-  backdrop-filter: blur(4px);}
-
-header {
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  background: rgba(173, 190, 166, 0.15);
-  backdrop-filter: blur(4px);
-  padding-top: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+#header{
+  background: #FCFCFD;
   .container{
-    .header {
+    .header{
+      &--left{
+        img {
 
-      .btn-con {
-        padding: 1em 1.5em;
-        font-weight: 700;
-        font-size: 1em;
-        line-height: 16px;
-        color: #23262F;
-        border: 2px solid #E6E8EC;
-        border-radius: 90px;
-        background: transparent;
-      }
-      &--nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        }
+        @include between();
+        width: 28rem;
         hr{
 
           width: 2px;
           height: 40px;
-          background: #E6E8EC;
+          background: rgba(0, 0, 0, 0.85);
           border-radius: 2px;
         }
         a {
-          text-decoration: none;
-
           color: #23262F;
           font-weight: 700;
           font-size: 14px;
           line-height: 16px;
         }
       }
+      padding: 10px 0;
+      @include between();
+      &--nav{
+        @include between();
+        width: 30rem;
+        &__input  {
+          position: relative;
+          input {
+            background: transparent;
+            border: 2px solid rgba(0, 0, 0, 0.85);
+            border-radius: 8px;
+            padding: 10px 12px 10px 16px;
+          }
+          .bx {
+            color: #777E91;
+            font-size: 20px;
+            position: absolute;
+            right: 11px;
+            top: 14px;
+
+          }
+        }
+        &__bell {
+          margin: 0px 5px;
+          position: relative;
+          @include center();
+          hr {
+            position: absolute;
+            top: -21px;
+            left: 18px;
+            width: 10px;
+            height: 10px;
+            background: green;
+            border-radius: 50%;
+          }
+          .bx {
+
+            color: #777E91;
+            font-size: 25px;
+          }
+        }
+        &__btn1 {
+          @include btn1();
+        }
+        &__btn2 {
+          @include btn2();
+        }
+
+
       }
+
+
     }
   }
+}
 
 
 #hero {

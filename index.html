@@ -7,47 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crypter</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-<header>
+<header id="header">
     <div class="container">
         <div class="header">
+            <div class="header--left">
+                <img src="./img/logo.svg    " alt="img">
+                <hr>
+                <a href="">Discover</a>
+                <a href="">How it work</a>
+            </div>
 
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
-        <div class="container-fluid">
-            <img src="./img/logo.svg" alt="">
-            <button class="navbar-toggler " type="button"  data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" >
-                <p class="p-2 bg-danger">dwqdwqd</p>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <div class="header--nav">
+                <div class="header--nav__input" >
+                    <input type="text"  placeholder="Search">
+                    <i class='bx bx-search'></i>
+
+                </div>
+                <div class="header--nav__bell">
+                    <i class='bx bx-bell' ></i>
                     <hr>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Discover</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">How it work</a>
-                    </li>
-
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-
-                </form>
-                <button type="button" class="btn m-2 btn-primary rounded-pill">Upload</button>
-                <button type="button" class="btn-con btn-secondary rounded-pill">Connect Wallet</button>
-
-
-
+                </div>
+                <button class="header--nav__btn1">Upload</button>
+                <button class="header--nav__btn2">Connect Wallet</button>
 
             </div>
         </div>
-    </nav>
-        </div>
-
     </div>
 </header>
 <section id="hero">
