@@ -103,18 +103,18 @@ img {
   font-size: 25px;
 }
 #header .container .header--nav__btn1 {
-  padding: 10px 14px;
+  padding: 0.8em 0.9em;
   background: #3772FF;
   border-radius: 90px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.9em;
   color: #FCFCFD;
 }
 #header .container .header--nav__btn2 {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.9em;
   color: #23262F;
-  padding: 12px 16px;
+  padding: 0.8em 1em;
   border: 2px solid #E6E8EC;
   border-radius: 90px;
   background: transparent;
@@ -233,6 +233,41 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+#hero .container .hero--card__btn1 {
+  padding: 0.8em 0.9em;
+  background: #3772FF;
+  border-radius: 90px;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #FCFCFD;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+#hero .container .hero--card__btn2 {
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #23262F;
+  padding: 0.8em 1em;
+  border: 2px solid #E6E8EC;
+  border-radius: 90px;
+  background: transparent;
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}
+#hero .container .hero--card__bx {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+#hero .container .hero--card__bx i {
+  padding: 0.3rem 0.3rem;
+  border: 1px solid #777E91;
+  font-size: 1.5rem;
+  background: transparent;
+  border-radius: 50%;
+  margin: 0px 0.4rem;
 }
 #hero .container .hero--card h1 {
   font-weight: 600;

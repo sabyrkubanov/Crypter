@@ -205,7 +205,32 @@
 
       }
       &--card {
+        &__btn1 {
+          @include btn1();
+          font-size: 1rem;
+          margin-top: 3rem;
+        }
+        &__btn2 {
+          @include btn2();
+          font-size: 1rem;
+          margin-top: 0.4rem;
+        }
+        &__bx{
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          margin-top: 1.5rem;
 
+          i{
+            padding: 0.3rem 0.3rem;
+            border: 1px solid  #777E91;
+            font-size: 1.5rem;
+            background: transparent;
+            border-radius: 50%;
+            margin: 0px 0.4rem;
+          }
+
+        }
         h1{
           font-weight: 600;
           font-size: 5rem;
