@@ -44,9 +44,22 @@
   font-weight: 700;
   font-size: 0.9em;
   color: #23262F;
-  padding: 0.8em 1em;
+  padding: 0;
   border: 2px solid #E6E8EC;
   border-radius: 90px;
   background: transparent;
+
+}
+
+@mixin btnEth {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #45B36B;
+  border: 2px solid #45B36B;
+  border-radius: 4px;
+  padding: 0.3rem;
+
 }
 

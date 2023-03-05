@@ -114,10 +114,11 @@ img {
   font-weight: 700;
   font-size: 0.9em;
   color: #23262F;
-  padding: 0.8em 1em;
+  padding: 0;
   border: 2px solid #E6E8EC;
   border-radius: 90px;
   background: transparent;
+  padding: 0.8em 1em;
 }
 
 #hero {
@@ -248,10 +249,11 @@ img {
   font-weight: 700;
   font-size: 0.9em;
   color: #23262F;
-  padding: 0.8em 1em;
+  padding: 0;
   border: 2px solid #E6E8EC;
   border-radius: 90px;
   background: transparent;
+  padding: 0.8em 1em;
   font-size: 1rem;
   margin-top: 0.4rem;
 }
@@ -275,6 +277,155 @@ img {
   line-height: 64px;
   letter-spacing: -0.02em;
   color: #23262F;
+}
+
+#blocks .container .blocks {
+  margin: 100px 0;
+}
+#blocks .container .blocks--block1__user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+#blocks .container .blocks--block1__user--users {
+  display: flex;
+  align-items: center;
+}
+#blocks .container .blocks--block1__user--users div {
+  margin: 0 0 1.5rem 0.5rem;
+}
+#blocks .container .blocks--block1__user--users div h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #23262F;
+  margin-top: 2rem;
+}
+#blocks .container .blocks--block1__user--users div h2 {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+#blocks .container .blocks--block1__user--btn h6 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #777E91;
+}
+#blocks .container .blocks--block1__user--btn button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #45B36B;
+  border: 2px solid #45B36B;
+  border-radius: 4px;
+  padding: 0.3rem;
+  padding: 0.5rem;
+}
+#blocks .container .blocks--block2__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  width: 85%;
+}
+#blocks .container .blocks--block2__cards--card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#blocks .container .blocks--block2__cards--card h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #23262F;
+}
+#blocks .container .blocks--block2__cards--card__flex {
+  padding: 0 0 0.9rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#blocks .container .blocks--block2__cards--card__flex button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #45B36B;
+  border: 2px solid #45B36B;
+  border-radius: 4px;
+  padding: 0.3rem;
+  padding: 0.3rem;
+  margin: 0 0.4rem;
+}
+#blocks .container .blocks--block2__cards--card__flex p {
+  margin-bottom: 0rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #777E91;
+}
+#blocks .container .blocks--block2__cards--card .btnEth-card:hover {
+  background: #0a53be;
+  color: white;
+}
+#blocks .container .blocks--block2__cards--card .btnEth-card {
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #23262F;
+  padding: 0;
+  border: 2px solid #E6E8EC;
+  border-radius: 90px;
+  background: transparent;
+  padding: 0.3rem 0.5rem;
+}
+#blocks .container .blocks--block3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#blocks .container .blocks--block3 h5 {
+  font-weight: 600;
+  font-size: 0.75em;
+  color: #777E91;
+}
+#blocks .container .blocks--block3__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.6rem 0;
+}
+#blocks .container .blocks--block3__cards div p {
+  font-weight: 500;
+  font-size: 0.875em;
+  color: #23262F;
+  margin-bottom: 0;
+}
+#blocks .container .blocks--block3__cards div h6 {
+  font-weight: 700;
+  font-size: 0.875em;
+  color: #23262F;
+}
+#blocks .container .blocks--block3__cards div h6 span {
+  font-weight: 500;
+  font-size: 0.75em;
+  color: #777E91;
+}
+#blocks .container .blocks--block3 button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #23262F;
+  padding: 0;
+  border: 2px solid #E6E8EC;
+  border-radius: 90px;
+  background: transparent;
+  padding: 0.5em 1.1em;
+}
+#blocks .container .blocks--block3 button i {
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
