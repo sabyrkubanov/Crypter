@@ -1,7 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   border: none;
+  outline: none;
 }
 
 a {
@@ -23,10 +25,6 @@ input {
 
 html {
   scroll-behavior: smooth;
-}
-
-img {
-  max-width: 100%;
 }
 
 img {
@@ -426,6 +424,95 @@ img {
 }
 #blocks .container .blocks--block3 button i {
   margin-left: 1rem;
+}
+
+#popular {
+  padding: 100px;
+}
+#popular .popular--title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#popular .popular--title__sellers h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #777E91;
+}
+#popular .popular--title__sellers select {
+  font-weight: 700;
+  font-size: 2.5em;
+  letter-spacing: -0.01em;
+  color: #23262F;
+  outline: none;
+}
+#popular .popular--title__select select {
+  width: 16em;
+  height: 3em;
+  background: #FCFCFD;
+  border: 2px solid #E6E8EC;
+  border-radius: 12px;
+}
+#popular .popular--card__cards {
+  width: 198.4px;
+  height: 247px;
+  background: #fdfdfe;
+  border: 2px solid red;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#popular .popular--card__cards--i {
+  margin: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  align-items: flex-start;
+}
+#popular .popular--card__cards--i .bxs-trophy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 1.5em;
+  color: white;
+  background: #3772FF;
+  border-radius: 1.5em;
+}
+#popular .popular--card__cards--i i {
+  color: #B1B5C4;
+  font-size: 25px;
+}
+#popular .popular--card__cards--i .bxs-up-arrow-alt {
+  rotate: 35deg;
+}
+#popular .popular--card__cards hr {
+  width: 150.4px;
+  height: 1px;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.85);
+}
+#popular .popular--card__cards div p {
+  font-weight: 500;
+  font-size: 0.875em;
+  color: #23262F;
+  margin-bottom: 0;
+  text-align: center;
+}
+#popular .popular--card__cards div h6 {
+  font-weight: 700;
+  font-size: 0.875em;
+  color: #23262F;
+  text-align: center;
+}
+#popular .popular--card__cards div h6 span {
+  font-weight: 500;
+  font-size: 0.75em;
+  color: #777E91;
 }
 
 /*# sourceMappingURL=style.css.map */
