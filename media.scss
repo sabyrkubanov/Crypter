@@ -1,10 +1,139 @@
+
+@media (max-width: 1200px) {
+  #hero{
+    .container {
+      .hero {
+      .col {
+        .hero--card {
+          h1 {
+
+            font-size: 3.7em;
+            line-height: 46px;
+
+          }
+          .p-4 {
+            padding: 0.5rem!important;
+          }
+          &__btn1 {
+            padding: 0.5em 0.5em;
+            font-size: 0.9em;
+            margin-top: 1em;
+          }
+          &__btn2 {
+            padding: 0.5em 0.5em;
+            font-size: 0.9em;
+            margin-top: 0.2em;
+          }
+        }
+        .col--currency {
+          height: 260px;
+          h3 {
+            font-size: 44px;
+            margin-bottom: 0;
+          }
+          h2 {
+            font-size: 14px;
+            padding-top: 0.5em;
+
+          }
+          h4 {
+            font-size: 22px;
+            margin-bottom: 0.3em;
+
+          }
+          &__current {
+            p {
+              font-size: 29px;
+            }
+          }
+
+        }
+      }
+      }
+    }
+
+
+  }
+
+}
+@media (max-width: 1024px){
+
+  #blocks {
+    .container {
+      .blocks {
+        &--block3 {
+          &__flex {
+            div {
+              display: flex;
+              &__cards {
+
+              }
+            }
+
+          }
+          button {
+            display: none;
+          }
+        }
+
+
+      }
+
+    }
+
+  }
+
+}
 @media (max-width: 992px){
-   .navbar-nav {
-     display: none;
+  .navbar-nav {
+    display: none;
   }
   .navbar__hr {
     display: none;
   }
+  #hero {
+    .container {
+      .hero {
+        &--card {
+          margin-top: 50px;
+          .p-4 {
+          }
+          &__bx {
+            align-items: flex-start;
+            justify-content: center;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+  #blocks {
+    .container {
+      .blocks {
+        &--block3 {
+          &__flex {
+            div {
+              &__cards {
+
+              }
+            }
+
+          }
+          button {
+            display: none;
+          }
+        }
+
+
+      }
+
+    }
+
+  }
+
 
 
 }

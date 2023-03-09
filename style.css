@@ -31,6 +31,11 @@ img {
   max-width: 100%;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 #header {
   background: #FCFCFD;
 }
@@ -111,38 +116,6 @@ img {
 
 #hero {
   padding-top: 10rem;
-}
-#hero .container .hero--title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#hero .container .hero--title p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  color: #777E91;
-  margin-bottom: 0.5em;
-}
-#hero .container .hero--title h1 {
-  font-weight: 700;
-  font-size: 2.5em;
-  text-align: center;
-  letter-spacing: -0.01em;
-  color: #23262F;
-}
-#hero .container .hero--title button {
-  padding: 1em 1.5em;
-  font-weight: 700;
-  font-size: 1em;
-  line-height: 16px;
-  color: #23262F;
-  border: 2px solid #E6E8EC;
-  border-radius: 90px;
-  background: transparent;
-  margin-top: 1rem;
 }
 #hero .container .hero .col {
   display: flex;
@@ -266,6 +239,38 @@ img {
   letter-spacing: -0.02em;
   color: #23262F;
 }
+#hero .container .hero--title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#hero .container .hero--title p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #777E91;
+  margin-bottom: 0.5em;
+}
+#hero .container .hero--title h1 {
+  font-weight: 700;
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #23262F;
+}
+#hero .container .hero--title button {
+  padding: 1em 1.5em;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 16px;
+  color: #23262F;
+  border: 2px solid #E6E8EC;
+  border-radius: 90px;
+  background: transparent;
+  margin-top: 1rem;
+}
 
 #blocks .container .blocks {
   margin: 100px 0;
@@ -370,9 +375,7 @@ img {
 }
 #blocks .container .blocks--block3 {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: flex-start;
 }
 #blocks .container .blocks--block3 h5 {
   font-weight: 600;
@@ -510,13 +513,11 @@ img {
   font-size: 0.75em;
   color: #777E91;
 }
-
-.swiper {
+#popular .popular--card__cards div .swiper {
   width: 100%;
   height: 100%;
 }
-
-.swiper-slide {
+#popular .popular--card__cards div .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
