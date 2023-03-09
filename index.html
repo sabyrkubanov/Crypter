@@ -9,34 +9,51 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+
 
 </head>
 <body>
+
 <header id="header">
-    <div class="container">
-        <div class="header">
-            <div class="header--left">
-                <img src="./img/logo.svg    " alt="img">
-                <hr>
-                <a href="">Discover</a>
-                <a href="">How it work</a>
-            </div>
+            <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"> <img src="./img/logo.svg" alt="img"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <hr class="navbar__hr" >
 
-            <div class="header--nav">
-                <div class="header--nav__input" >
-                    <input type="text"  placeholder="Search">
-                    <i class='bx bx-search'></i>
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="navbar--nav">
+                                <a href="#">Discover</a>
+                            </li>
+                            <li class="navbar--nav">
+                                <a href="#">How it work</a>
+                            </li>
+                        </ul>
 
+
+
+                        <div class="navbar--input" >
+                         <input type="text" placeholder="Search">
+                         <i class='bx bx-search'></i>
+                         </div>
+                        <div class="navbar--bell">
+                            <i class='bx bx-bell' ></i>
+                            <hr>
+                        </div>
+
+                        <button class="navbar__btn1">Upload</button>
+                        <button class="navbar__btn2">Connect Wallet</button>
+                    </div>
                 </div>
-                <div class="header--nav__bell">
-                    <i class='bx bx-bell' ></i>
-                    <hr>
-                </div>
-                <button class="header--nav__btn1">Upload</button>
-                <button class="header--nav__btn2">Connect Wallet</button>
+            </nav>
 
-            </div>
+
         </div>
     </div>
 </header>
@@ -192,9 +209,8 @@
 
 
             </div>
-
-            <div class="col-xl-3 col-lg-12 col-md-12">
-                <div class="blocks--block3">
+            <div class=" col-xl-3 col-lg-12 col-md-12 blocks--block3">
+                <div >
                     <h5>Latest upload from creators 🔥</h5>
                     <div class="blocks--block3__cards">
                         <img src="./img/blocks-block3-1.png" alt="">
@@ -260,87 +276,117 @@
 
         </div>
     </div>
-            <div class="row ">
-                <div class="popular--card col-xl-12 d-flex">
-                    <div class="popular--card__cards">
-                        <div class="popular--card__cards--i">
-                            <i class='bx bxs-trophy text-light fs-6'>#1</i>
-                            <div>
-                                <i class='bx bx-message-alt-add m-l'></i>
-                                <i class='bx bxs-up-arrow-alt' ></i>
+            <div class="popular--card ">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <div class="popular--card__cards ">
+                            <div class="popular--card__cards--i">
+                                <i class='bx bxs-trophy text-light fs-6'>#1</i>
+                                <div>
+                                    <i class='bx bx-message-alt-add m-l'></i>
+                                    <i class='bx bxs-up-arrow-alt' ></i>
+                                </div>
                             </div>
-                          </div>
-                        <hr>
-                        <img src="./img/popular--1.png" alt="">
-                        <div class="m-lg-3">
-                            <p>Joana Anita</p>
-                            <h6>2.456 <span>ETH</span></h6>
-                        </div>
-                        </div>
-                    <div class="popular--card__cards">
-                        <div class="popular--card__cards--i">
-                            <i class='bx bxs-trophy text-light fs-6'>#1</i>
-                            <div>
-                                <i class='bx bx-message-alt-add m-l'></i>
-                                <i class='bx bxs-up-arrow-alt' ></i>
+                            <hr>
+                            <img src="./img/popular--1.png" alt="">
+                            <div class="m-lg-3">
+                                <p>Joana Anita</p>
+                                <h6>2.456 <span>ETH</span></h6>
                             </div>
-                        </div>
-                        <hr>
-                        <img src="./img/popular--1.png" alt="">
-                        <div class="m-lg-3">
-                            <p>Joana Anita</p>
-                            <h6>2.456 <span>ETH</span></h6>
-                        </div>
-                    </div>
-                    <div class="popular--card__cards">
-                        <div class="popular--card__cards--i">
-                            <i class='bx bxs-trophy text-light fs-6'>#1</i>
-                            <div>
-                                <i class='bx bx-message-alt-add m-l'></i>
-                                <i class='bx bxs-up-arrow-alt' ></i>
+                        </div></div>
+                        <div class="swiper-slide"> <div class="popular--card__cards ">
+                            <div class="popular--card__cards--i">
+                                <i class='bx bxs-trophy text-light fs-6'>#1</i>
+                                <div>
+                                    <i class='bx bx-message-alt-add m-l'></i>
+                                    <i class='bx bxs-up-arrow-alt' ></i>
+                                </div>
                             </div>
-                        </div>
-                        <hr>
-                        <img src="./img/popular--1.png" alt="">
-                        <div class="m-lg-3">
-                            <p>Joana Anita</p>
-                            <h6>2.456 <span>ETH</span></h6>
-                        </div>
-                    </div>
-                    <div class="popular--card__cards">
-                        <div class="popular--card__cards--i">
-                            <i class='bx bxs-trophy text-light fs-6'>#1</i>
-                            <div>
-                                <i class='bx bx-message-alt-add m-l'></i>
-                                <i class='bx bxs-up-arrow-alt' ></i>
+                            <hr>
+                            <img src="./img/popular--1.png" alt="">
+                            <div class="m-lg-3">
+                                <p>Joana Anita</p>
+                                <h6>2.456 <span>ETH</span></h6>
                             </div>
-                        </div>
-                        <hr>
-                        <img src="./img/popular--1.png" alt="">
-                        <div class="m-lg-3">
-                            <p>Joana Anita</p>
-                            <h6>2.456 <span>ETH</span></h6>
-                        </div>
-                    </div>
-                    <div class="popular--card__cards">
-                        <div class="popular--card__cards--i">
-                            <i class='bx bxs-trophy text-light fs-6'>#1</i>
-                            <div>
-                                <i class='bx bx-message-alt-add m-l'></i>
-                                <i class='bx bxs-up-arrow-alt' ></i>
+                        </div></div>
+                        <div class="swiper-slide"> <div class="popular--card__cards ">
+                            <div class="popular--card__cards--i">
+                                <i class='bx bxs-trophy text-light fs-6'>#1</i>
+                                <div>
+                                    <i class='bx bx-message-alt-add m-l'></i>
+                                    <i class='bx bxs-up-arrow-alt' ></i>
+                                </div>
                             </div>
-                        </div>
-                        <hr>
-                        <img src="./img/popular--1.png" alt="">
-                        <div class="m-lg-3">
-                            <p>Joana Anita</p>
-                            <h6>2.456 <span>ETH</span></h6>
-                        </div>
-                    </div>
+                            <hr>
+                            <img src="./img/popular--1.png" alt="">
+                            <div class="m-lg-3">
+                                <p>Joana Anita</p>
+                                <h6>2.456 <span>ETH</span></h6>
+                            </div>
+                        </div></div>
+                        <div class="swiper-slide"> <div class="popular--card__cards ">
+                            <div class="popular--card__cards--i">
+                                <i class='bx bxs-trophy text-light fs-6'>#1</i>
+                                <div>
+                                    <i class='bx bx-message-alt-add m-l'></i>
+                                    <i class='bx bxs-up-arrow-alt' ></i>
+                                </div>
+                            </div>
+                            <hr>
+                            <img src="./img/popular--1.png" alt="">
+                            <div class="m-lg-3">
+                                <p>Joana Anita</p>
+                                <h6>2.456 <span>ETH</span></h6>
+                            </div>
+                        </div></div>
+                        <div class="swiper-slide"> <div class="popular--card__cards ">
+                            <div class="popular--card__cards--i">
+                                <i class='bx bxs-trophy text-light fs-6'>#1</i>
+                                <div>
+                                    <i class='bx bx-message-alt-add m-l'></i>
+                                    <i class='bx bxs-up-arrow-alt' ></i>
+                                </div>
+                            </div>
+                            <hr>
+                            <img src="./img/popular--1.png" alt="">
+                            <div class="m-lg-3">
+                                <p>Joana Anita</p>
+                                <h6>2.456 <span>ETH</span></h6>
+                            </div>
+                        </div></div>
+                        <div class="swiper-slide"> <div class="popular--card__cards ">
+                            <div class="popular--card__cards--i">
+                                <i class='bx bxs-trophy text-light fs-6'>#1</i>
+                                <div>
+                                    <i class='bx bx-message-alt-add m-l'></i>
+                                    <i class='bx bxs-up-arrow-alt' ></i>
+                                </div>
+                            </div>
+                            <hr>
+                            <img src="./img/popular--1.png" alt="">
+                            <div class="m-lg-3">
+                                <p>Joana Anita</p>
+                                <h6>2.456 <span>ETH</span></h6>
+                            </div>
+                        </div></div>
+                        <div class="swiper-slide"> <div class="popular--card__cards ">
+                            <div class="popular--card__cards--i">
+                                <i class='bx bxs-trophy text-light fs-6'>#1</i>
+                                <div>
+                                    <i class='bx bx-message-alt-add m-l'></i>
+                                    <i class='bx bxs-up-arrow-alt' ></i>
+                                </div>
+                            </div>
+                            <hr>
+                            <img src="./img/popular--1.png" alt="">
+                            <div class="m-lg-3">
+                                <p>Joana Anita</p>
+                                <h6>2.456 <span>ETH</span></h6>
+                            </div>
+                        </div></div>
 
-
+                    </div>
                 </div>
-
                 </div>
             </div>
             </div>
@@ -350,5 +396,9 @@
 
 
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>

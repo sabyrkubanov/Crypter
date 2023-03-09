@@ -1,0 +1,27 @@
+@media (max-width: 992px) {
+  .navbar-nav {
+    display: none;
+  }
+  .navbar__hr {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-nav {
+    display: block;
+  }
+  .navbar--bell i {
+    display: none;
+  }
+  .navbar--bell hr {
+    display: none;
+  }
+  .navbar--input {
+    margin: 1em 0 1.5em 1.5em;
+  }
+  .navbar--input i {
+    left: 187px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

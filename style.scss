@@ -3,40 +3,16 @@
 
 #header{
   background: #FCFCFD;
-  .container{
-    .header{
-      &--left{
-        img {
 
-        }
-        @include between();
-        width: 28rem;
-        hr{
 
-          width: 2px;
-          height: 40px;
-          background: rgba(0, 0, 0, 0.85);
-          border-radius: 2px;
-        }
-        a {
-          color: #23262F;
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 16px;
-        }
-      }
-      padding: 10px 0;
-      @include between();
-      &--nav{
-        @include between();
-        width: 30rem;
-        &__input  {
+      .navbar {
+        &--input  {
           position: relative;
           input {
             background: transparent;
-            border: 2px solid rgba(0, 0, 0, 0.85);
+            border: 2px solid rgba(0, 0, 0, 0.22);
             border-radius: 8px;
-            padding: 10px 12px 10px 16px;
+            padding: 10px 32px 10px 16px;
           }
           .bx {
             color: #777E91;
@@ -47,10 +23,24 @@
 
           }
         }
-        &__bell {
-          margin: 0px 5px;
+        &__btn1 {
+          @include btn1();
+          margin: 0px 20px;
+        }
+        &__btn2 {
+          @include btn2();
+          padding: 0.8em 1em;
+        }
+        &--bell {
+          margin: 0px 15px;
           position: relative;
           @include center();
+          i {
+
+            color: #777E91;
+            font-size: 25px;
+
+          }
           hr {
             position: absolute;
             top: -21px;
@@ -60,29 +50,46 @@
             background: green;
             border-radius: 50%;
           }
-          .bx {
 
+        }
+        &__hr{
+
+          width: 2px;
+          height: 40px;
+          background: rgba(0, 0, 0, 0.85);
+          border-radius: 2px;
+        }
+        &--nav {
+          a {
             color: #777E91;
-            font-size: 25px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            margin-left: 2rem;
+          }
+          a:hover {
+            color: #23262F;
           }
         }
-        &__btn1 {
-          @include btn1();
-        }
-        &__btn2 {
-          @include btn2();
-          padding: 0.8em 1em;
+        .navbar-toggler {
+          background: rgba(0, 0, 0, 0.15);
 
+        }
         }
 
 
-      }
 
 
     }
-  }
-}
-#hero {
+
+
+
+
+
+
+
+
+  #hero {
   padding-top: 10rem;
 
   .container {
@@ -251,6 +258,8 @@
   .container {
     .blocks {
       margin: 100px 0;
+      display: flex;
+      align-items: flex-start;
       &--block1 {
         &__user {
           display: flex;
@@ -423,7 +432,9 @@
 
     }
     &--card {
+      margin: 65px 0;
       &__cards {
+        margin-left: 15px;
         width: 198.4px;
         height: 247px;
         background: #fdfdfe;
@@ -488,6 +499,19 @@
   }
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
