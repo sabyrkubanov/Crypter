@@ -34,9 +34,28 @@
   #hero .container .hero .col .col--currency__current p {
     font-size: 29px;
   }
+  #popular .container .popular {
+    margin-left: -50px;
+  }
 }
 @media (max-width: 1024px) {
-  #blocks .container .blocks--block3__flex div {
+  #blocks .container .blocks--block3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blocks .container .blocks--block3 .div--block3 {
+    display: flex;
+  }
+  #blocks .container .blocks--block3 .div--block3 .blocks--block3__cards {
+    margin: 0.6rem 17px 0.6rem;
+  }
+  #blocks .container .blocks--block3 .div--block3 .block__cards-1 {
+    display: flex;
+    margin-left: -42px;
+    padding: 0 20px;
+  }
+  #blocks .container .blocks--block3 .div--block3 .block__cards-2 {
     display: flex;
   }
   #blocks .container .blocks--block3 button {
@@ -57,11 +76,27 @@
     align-items: flex-start;
     justify-content: center;
   }
+  #blocks .container .blocks--block3 {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+  #blocks .container .blocks--block3__cards div {
+    margin-left: 10px;
+  }
+  #blocks .container .blocks--block3 .block__cards-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #blocks .container .blocks--block3 .block__cards-2 {
+    flex-direction: column;
+    display: flex;
+  }
   #blocks .container .blocks--block3 button {
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar-nav {
     display: block;
   }
@@ -80,8 +115,49 @@
 }
 @media (max-width: 568px) {
   #popular .container .popular--title {
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
+    justify-content: center;
+  }
+  #popular .container .popular--title__sellers h2 {
+    font-size: 2.5em;
+  }
+  #popular .container .popular--title__sellers select option {
+    font-size: 20px;
+  }
+}
+@media (max-width: 450px) {
+  #blocks .container .blocks--block1__user--btn h6 {
+    font-weight: 400;
+    font-size: 0.775em;
+  }
+  #blocks .container .blocks--block1__user--users div h1 {
+    font-size: 1rem;
+  }
+  #blocks .container .blocks--block2__cards .btnEth-card {
+    font-size: 0.6em;
+  }
+  #blocks .container .blocks--block2__cards--card button {
+    font-size: 9px;
+  }
+  #blocks .container .blocks--block2__cards p {
+    font-size: 0.675rem;
+  }
+  #blocks .container .blocks--block3__cards img {
+    max-width: 40%;
+  }
+  #blocks .container .blocks--block3__cards div {
+    margin-left: 10px;
+  }
+  #blocks .container .blocks--block3__cards div p {
+    font-size: 0.675em;
+  }
+  #blocks .container .blocks--block3__cards div h6 {
+    font-size: 0.675em;
+  }
+  #blocks .container .blocks .swiper-wrapper {
+    justify-content: center;
   }
 }
 

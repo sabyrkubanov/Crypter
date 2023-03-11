@@ -260,138 +260,160 @@
       display: flex;
       align-items: flex-start;
 
-        &--block1 {
-          &__user {
+      &--block1 {
+        &__user {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 85%;
+
+          &--users {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            width: 85%;
-            &--users {
-              display: flex;
-              align-items: center;
-              div {
-                margin:0 0  1.5rem 0.5rem;
-
-
-
-                h1 {
-                  font-weight: 600;
-                  font-size: 1.5rem;
-                  color: #23262F;
-                  margin-top: 2rem;
-
-                }
-                h2 {
-                  font-weight: 500;
-                  font-size: 0.875rem;
-                }
-              }
-
-
-            }
-            &--btn {
-              h6 {
-                font-weight: 400;
-                font-size: 0.875rem;
-                color: #777E91;
-
-              }
-              button {
-                @include btnEth();
-                padding: 0.5rem;
-              }
-            }
-          }
-        }
-        &--block2 {
-          &__cards {
-            @include around();
-            justify-content: space-evenly;
-            width: 85%;
-            &--card {
-              @include column();
-
-              align-items: flex-start;
-
-              h3 {
-                font-weight: 500;
-                font-size: 1rem;
-                color: #23262F;
-              }
-              &__flex {
-                padding:  0 0 0.9rem 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                button {
-                  @include btnEth();
-                  padding: 0.3rem;
-                  margin: 0 0.4rem;
-                }
-
-                p {
-                  margin-bottom: 0rem;
-                  font-weight: 400;
-                  font-size: 0.875rem;
-                  color: #777E91;
-                }
-
-              }
-              .btnEth-card:hover {
-                background: #0a53be;
-                color: white;
-
-              }
-              .btnEth-card {
-                @include btn2();
-                padding: 0.3rem 0.5rem;
-
-              }
-            }
-          }
-        }
-        &--block3 {
-          display: flex;
-          justify-content: flex-start;
-          h5 {
-            font-weight: 600;
-            font-size: 0.75em;
-            color: #777E91;
-          }
-
-          &__cards {
-            @include center();
-            margin: 0.6rem 0;
 
             div {
-              p {
-                font-weight: 500;
-                font-size: 0.875em;
+              margin: 0 0 1.5rem 0.5rem;
+
+
+              h1 {
+                font-weight: 600;
+                font-size: 1.5rem;
                 color: #23262F;
-                margin-bottom: 0;
-              }
-              h6 {
-                font-weight: 700;
-                font-size: 0.875em;
-                color: #23262F;
-                span {
-                  font-weight: 500;
-                  font-size: 0.75em;
-                  color: #777E91;
-                }
+                margin-top: 2rem;
+
               }
 
+              h2 {
+                font-weight: 500;
+                font-size: 0.875rem;
+              }
             }
+
+
           }
-          button {
-            @include between();
-            @include btn2();
-            padding: 0.5em 1.1em;
-            i {
-              margin-left: 1rem;
+
+          &--btn {
+            h6 {
+              font-weight: 400;
+              font-size: 0.875rem;
+              color: #777E91;
+
+            }
+
+            button {
+              @include btnEth();
+              padding: 0.5rem;
             }
           }
         }
+      }
+
+      &--block2 {
+        &__cards {
+          @include around();
+          justify-content: space-evenly;
+          width: 85%;
+
+          &--card {
+            @include column();
+
+            align-items: flex-start;
+
+            h3 {
+              font-weight: 500;
+              font-size: 1rem;
+              color: #23262F;
+            }
+
+            &__flex {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 12px;
+            }
+
+            button {
+              @include btnEth();
+              padding: 0.3rem;
+              margin: 0 0.4rem;
+            }
+
+            p {
+              margin-bottom: 0rem;
+              font-weight: 400;
+              font-size: 0.875rem;
+              color: #777E91;
+            }
+
+          }
+
+          .btnEth-card:hover {
+            background: #0a53be;
+            color: white;
+
+          }
+
+          .btnEth-card {
+            @include btn2();
+            padding: 0.3rem 0.5rem;
+
+          }
+        }
+      }
+
+      &--block3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .div--block3 {
+
+        }
+
+        h5 {
+          font-weight: 600;
+          font-size: 0.75em;
+          color: #777E91;
+        }
+
+        &__btn {
+          @include between();
+          @include btn2();
+          padding: 10px 30px;
+
+
+
+          i {
+            margin-left: 1rem;
+          }
+        }
+
+        &__cards {
+          @include center();
+          margin: 0.6rem 0;
+
+          div {
+            p {
+              font-weight: 500;
+              font-size: 0.875em;
+              color: #23262F;
+              margin-bottom: 0;
+            }
+
+            h6 {
+              font-weight: 700;
+              font-size: 0.875em;
+              color: #23262F;
+
+              span {
+                font-weight: 500;
+                font-size: 0.75em;
+                color: #777E91;
+              }
+            }
+
+          }
+        }
+      }
 
 
     }
@@ -402,6 +424,7 @@
 #popular {
   padding: 100px;
   .popular {
+
     &--title {
       display: flex;
       align-items: center;

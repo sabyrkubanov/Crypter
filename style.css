@@ -68,7 +68,6 @@ p {
   font-weight: 700;
   font-size: 0.9em;
   color: #23262F;
-  padding: 0;
   border: 2px solid #E6E8EC;
   border-radius: 90px;
   background: transparent;
@@ -210,7 +209,6 @@ p {
   font-weight: 700;
   font-size: 0.9em;
   color: #23262F;
-  padding: 0;
   border: 2px solid #E6E8EC;
   border-radius: 90px;
   background: transparent;
@@ -336,12 +334,12 @@ p {
   color: #23262F;
 }
 #blocks .container .blocks--block2__cards--card__flex {
-  padding: 0 0 0.9rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 12px;
 }
-#blocks .container .blocks--block2__cards--card__flex button {
+#blocks .container .blocks--block2__cards--card button {
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
@@ -353,21 +351,20 @@ p {
   padding: 0.3rem;
   margin: 0 0.4rem;
 }
-#blocks .container .blocks--block2__cards--card__flex p {
+#blocks .container .blocks--block2__cards--card p {
   margin-bottom: 0rem;
   font-weight: 400;
   font-size: 0.875rem;
   color: #777E91;
 }
-#blocks .container .blocks--block2__cards--card .btnEth-card:hover {
+#blocks .container .blocks--block2__cards .btnEth-card:hover {
   background: #0a53be;
   color: white;
 }
-#blocks .container .blocks--block2__cards--card .btnEth-card {
+#blocks .container .blocks--block2__cards .btnEth-card {
   font-weight: 700;
   font-size: 0.9em;
   color: #23262F;
-  padding: 0;
   border: 2px solid #E6E8EC;
   border-radius: 90px;
   background: transparent;
@@ -375,12 +372,28 @@ p {
 }
 #blocks .container .blocks--block3 {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
 #blocks .container .blocks--block3 h5 {
   font-weight: 600;
   font-size: 0.75em;
   color: #777E91;
+}
+#blocks .container .blocks--block3__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #23262F;
+  border: 2px solid #E6E8EC;
+  border-radius: 90px;
+  background: transparent;
+  padding: 10px 30px;
+}
+#blocks .container .blocks--block3__btn i {
+  margin-left: 1rem;
 }
 #blocks .container .blocks--block3__cards {
   display: flex;
@@ -403,22 +416,6 @@ p {
   font-weight: 500;
   font-size: 0.75em;
   color: #777E91;
-}
-#blocks .container .blocks--block3 button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 700;
-  font-size: 0.9em;
-  color: #23262F;
-  padding: 0;
-  border: 2px solid #E6E8EC;
-  border-radius: 90px;
-  background: transparent;
-  padding: 0.5em 1.1em;
-}
-#blocks .container .blocks--block3 button i {
-  margin-left: 1rem;
 }
 
 #popular {

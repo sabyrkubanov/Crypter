@@ -54,23 +54,41 @@
 
 
   }
+  #popular {
+    .container {
+      .popular {
+        margin-left: -50px;
+      }
+    }
+  }
 
 }
 @media (max-width: 1024px){
-
+  #blocks .container .blocks--block3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   #blocks {
     .container {
       .blocks {
         &--block3 {
-          &__flex {
-            div {
-              display: flex;
-              &__cards {
-
-              }
+          .div--block3 {
+            .blocks--block3__cards {
+              margin: 0.6rem 17px 0.6rem ;
             }
+            display: flex;
+            .block__cards-1{
+              display: flex;
+              margin-left: -42px;
+              padding: 0 20px ;
+            }
+            .block__cards-2 {
 
+              display: flex;
+            }
           }
+
           button {
             display: none;
           }
@@ -114,13 +132,28 @@
     .container {
       .blocks {
         &--block3 {
-          &__flex {
-            div {
-              &__cards {
+          margin-top: 50px;
+            display: flex;
+          align-items: center;
 
-              }
+          &__cards{
+
+            div   {
+              margin-left: 10px;
+
             }
 
+
+          }
+
+          .block__cards-1{
+            display: flex;
+            flex-direction: column;
+          }
+          .block__cards-2 {
+            flex-direction: column;
+
+            display: flex;
           }
           button {
             display: none;
@@ -137,7 +170,8 @@
 
 
 }
-@media (max-width: 767px){
+@media (max-width: 768px)
+{
   .navbar-nav {
     display: block;
   }
@@ -167,12 +201,100 @@
    .container {
      .popular {
        &--title {
-         align-items: flex-start;
+         align-items: center;
+         text-align: center;
          flex-direction: column;
+         justify-content: center;
+         &__sellers {
+           h2 {
+
+             font-size: 2.5em;
+           }
+           select option {
+             font-size: 20px;
+
+           }
+         }
+
        }
+
      }
    }
  }
 }
 
+@media (max-width: 450px) {
+  #blocks {
+    .container {
+      .blocks {
+        &--block1 {
+          &__user {
+            &--btn {
+              h6 {
+                font-weight: 400;
+                font-size: 0.775em;
+              }
+            }
+
+            &--users {
+              div h1 {
+                font-size: 1rem;
+              }
+
+
+            }
+
+          }
+
+        }
+
+        &--block2 {
+          &__cards {
+            .btnEth-card {
+              font-size: 0.6em;
+            }
+            &--card
+            button {
+              font-size: 9px;
+            }
+
+            p {
+              font-size: 0.675rem;
+            }
+          }
+        }
+
+        &--block3{
+
+          &__cards{
+            img {
+              max-width: 40%;
+            }
+            div   {
+              margin-left: 10px;
+              p {
+
+
+                font-size: 0.675em;
+
+              }
+              h6 {
+                font-size: 0.675em;
+
+
+              }
+            }
+
+
+          }
+
+        }
+        .swiper-wrapper {
+          justify-content: center;
+        }
+
+      }
+    }
+    }
+  }
 
