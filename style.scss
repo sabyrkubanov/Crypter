@@ -424,6 +424,13 @@
 
       }
       &__select {
+        h2 {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 12px;
+          text-transform: uppercase;
+          color: #B1B5C4;
+        }
         select {
 
           width: 16em;
@@ -443,8 +450,9 @@
         width: 198.4px;
         height: 247px;
         background: #fdfdfe;
-        border: 2px solid red;
         border-radius: 16px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(0, 0, 0, 0.14);
         @include column();
         justify-content: space-evenly;
         &--i {
@@ -452,7 +460,7 @@
           @include between();
           width: 80%;
           align-items: flex-start;
-          .bxs-trophy {
+          .text-light {
             @include center();
             width: 51px;
             height: 1.5em;
@@ -460,6 +468,16 @@
             background: #3772FF;
             border-radius: 1.5em;
           }
+          .bx-color {
+            background: #9757D7;
+          }
+          .bxs-bolt {
+            background: #45B36B;
+          }
+          .bxs-chevron-up-circle {
+            background: #23262F;
+          }
+
           i {
             color:  #B1B5C4;;
             font-size: 25px;
