@@ -114,6 +114,9 @@
   }
 }
 @media (max-width: 568px) {
+  #popular {
+    padding: 50px;
+  }
   #popular .container .popular--title {
     align-items: center;
     text-align: center;
@@ -123,8 +126,14 @@
   #popular .container .popular--title__sellers h2 {
     font-size: 2.5em;
   }
+  #popular .container .popular--title__sellers select {
+    font-size: 2em;
+  }
   #popular .container .popular--title__sellers select option {
     font-size: 20px;
+  }
+  #blocks .container .blocks {
+    margin: 0;
   }
 }
 @media (max-width: 450px) {
