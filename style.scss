@@ -1,87 +1,88 @@
 @import "reset";
 @import "mixin";
+@import "./header/css/style.css";
 
 //HEADER
-#header{
-  background: #FCFCFD;
-
-
-      .navbar {
-        &--input  {
-          position: relative;
-          input {
-            background: transparent;
-            border: 2px solid rgba(0, 0, 0, 0.22);
-            border-radius: 8px;
-            padding: 10px 32px 10px 16px;
-          }
-          .bx {
-            color: #777E91;
-            font-size: 20px;
-            position: absolute;
-            right: 11px;
-            top: 14px;
-
-          }
-        }
-        &__btn1 {
-          @include btn1();
-          margin: 0px 20px;
-        }
-        &__btn2 {
-          @include btn2();
-          padding: 0.8em 1em;
-        }
-        &--bell {
-          margin: 0px 15px;
-          position: relative;
-          @include center();
-          i {
-
-            color: #777E91;
-            font-size: 25px;
-
-          }
-          hr {
-            position: absolute;
-            top: -21px;
-            left: 18px;
-            width: 10px;
-            height: 10px;
-            background: green;
-            border-radius: 50%;
-          }
-
-        }
-        &__hr{
-
-          width: 2px;
-          height: 40px;
-          background: rgba(0, 0, 0, 0.85);
-          border-radius: 2px;
-        }
-        &--nav {
-          a {
-            color: #777E91;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            margin-left: 2rem;
-          }
-          a:hover {
-            color: #23262F;
-          }
-        }
-        .navbar-toggler {
-          background: rgba(0, 0, 0, 0.15);
-
-        }
-        }
-
-
-
-
-    }
+//#header{
+//  background: #FCFCFD;
+//
+//
+//      .navbar {
+//        &--input  {
+//          position: relative;
+//          input {
+//            background: transparent;
+//            border: 2px solid rgba(0, 0, 0, 0.22);
+//            border-radius: 8px;
+//            padding: 10px 32px 10px 16px;
+//          }
+//          .bx {
+//            color: #777E91;
+//            font-size: 20px;
+//            position: absolute;
+//            right: 11px;
+//            top: 14px;
+//
+//          }
+//        }
+//        &__btn1 {
+//          @include btn1();
+//          margin: 0px 20px;
+//        }
+//        &__btn2 {
+//          @include btn2();
+//          padding: 0.8em 1em;
+//        }
+//        &--bell {
+//          margin: 0px 15px;
+//          position: relative;
+//          @include center();
+//          i {
+//
+//            color: #777E91;
+//            font-size: 25px;
+//
+//          }
+//          hr {
+//            position: absolute;
+//            top: -21px;
+//            left: 18px;
+//            width: 10px;
+//            height: 10px;
+//            background: green;
+//            border-radius: 50%;
+//          }
+//
+//        }
+//        &__hr{
+//
+//          width: 2px;
+//          height: 40px;
+//          background: rgba(0, 0, 0, 0.85);
+//          border-radius: 2px;
+//        }
+//        &--nav {
+//          a {
+//            color: #777E91;
+//            font-weight: 700;
+//            font-size: 14px;
+//            line-height: 16px;
+//            margin-left: 2rem;
+//          }
+//          a:hover {
+//            color: #23262F;
+//          }
+//        }
+//        .navbar-toggler {
+//          background: rgba(0, 0, 0, 0.15);
+//
+//        }
+//        }
+//
+//
+//
+//
+//    }
 
 //HERO
 #hero {

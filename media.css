@@ -127,10 +127,10 @@
     font-size: 2.5em;
   }
   #popular .container .popular--title__sellers select {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   #popular .container .popular--title__sellers select option {
-    font-size: 20px;
+    font-size: 1rem;
   }
   #blocks .container .blocks {
     margin: 0;

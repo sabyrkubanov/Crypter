@@ -1,3 +1,4 @@
+@import "./header/css/style.css";
 * {
   margin: 0;
   padding: 0;
@@ -34,83 +35,6 @@ img {
 p {
   margin: 0;
   padding: 0;
-}
-
-#header {
-  background: #FCFCFD;
-}
-#header .navbar--input {
-  position: relative;
-}
-#header .navbar--input input {
-  background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.22);
-  border-radius: 8px;
-  padding: 10px 32px 10px 16px;
-}
-#header .navbar--input .bx {
-  color: #777E91;
-  font-size: 20px;
-  position: absolute;
-  right: 11px;
-  top: 14px;
-}
-#header .navbar__btn1 {
-  padding: 0.8em 0.9em;
-  background: #3772FF;
-  border-radius: 90px;
-  font-weight: 700;
-  font-size: 0.9em;
-  color: #FCFCFD;
-  margin: 0px 20px;
-}
-#header .navbar__btn2 {
-  font-weight: 700;
-  font-size: 0.9em;
-  color: #23262F;
-  border: 2px solid #E6E8EC;
-  border-radius: 90px;
-  background: transparent;
-  padding: 0.8em 1em;
-}
-#header .navbar--bell {
-  margin: 0px 15px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#header .navbar--bell i {
-  color: #777E91;
-  font-size: 25px;
-}
-#header .navbar--bell hr {
-  position: absolute;
-  top: -21px;
-  left: 18px;
-  width: 10px;
-  height: 10px;
-  background: green;
-  border-radius: 50%;
-}
-#header .navbar__hr {
-  width: 2px;
-  height: 40px;
-  background: rgba(0, 0, 0, 0.85);
-  border-radius: 2px;
-}
-#header .navbar--nav a {
-  color: #777E91;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  margin-left: 2rem;
-}
-#header .navbar--nav a:hover {
-  color: #23262F;
-}
-#header .navbar .navbar-toggler {
-  background: rgba(0, 0, 0, 0.15);
 }
 
 #hero {
